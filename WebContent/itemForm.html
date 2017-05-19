@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>itemform</title>
+</head>
+<body>
+
+	<form id="dataInputByForm" name="dataInputByForm" action="">
+
+		<fieldset>
+			<legend>Key data:</legend>
+
+			<label for="filename">Picture (max 2MB, format JPG, GIF or
+				PNG)</label> <br> 
+				<input id="upload" type="file" accept="image/*"
+				onChange="uploadOnChange(this, 'plaatje')" /> <br>
+ 
+			<label for="filename">Document (max 1MB, format DOC, PDF, MP4
+				or HTML)</label> <br> 
+				<input id="upload" type="file"
+				accept=".doc, .docx, .pdf, .mp4 .html"
+				onChange="uploadOnChange(this, 'doc')" /> <br> 
+
+			<table>
+				<tr>
+					<td>Item name</td>
+					<td><input type="text" name="itemName" id="itemName"></td>
+				</tr>
+				<tr>
+					<td>Name extended</td>
+					<td><input type="text" name="nameExt" id="nameExt"></td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td><input type="text" name="datum" id="datum"></td>
+				</tr>
+				<tr>
+					<td>Developer</td>
+					<td><input type="text" name="developer" id="developer"></td>
+				</tr>
+				<tr>
+					<td>Description</td>
+					<td><input type="text" name="description" id="description"></td>
+				</tr>
+				<tr>
+					<td>Type</td>
+					<td><input type="text" name="type" id="type"></td>
+				</tr>
+				<tr>
+					<td>Profile</td>
+					<td><input type="text" name="profiel" id="profiel"></td>
+				</tr>
+
+				<tr hidden=>
+					<td>Picture</td>
+					<td><input type="text" name="plaatje" id="plaatje"></td>
+				</tr>
+
+				<tr hidden=>
+					<td>Document</td>
+					<td><input type="text" name="doc" id="doc"></td>
+				</tr>
+
+			</table>
+
+			<input type="hidden" id="itemId" value="0" /> <input id="submit"
+				onclick="formSubmit()" type="button" value="Submit">
+
+		</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="template.css">
+<title>webtools</title>
+</head>
+
+<body onload="loadDoc()">
+	<div class="header">
+		<div class="header topmost"></div>
+		<div class="header spacing_line_thin"></div>
+
+		<header class="banner">
+			<h1>Webtools</h1>
+			<p>
+				Just the basic facts <br> Website Platform, Tools and
+				Techniques
+			</p>
+			<img src="Images/Dark.png" width="300" height="100"
+				title="Legendary cover art for the album The Dark Side of the Moon by Pink Floyd."
+				alt="">
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="archive.html">Archives</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="news.html">News</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+	</div>
+
+	<div class="header spacing_line_thick"></div>
+	<div id="admin-bar">
+		<button onclick="getItemForm()">Add item</button>
+	</div>
+
+
+	<div class="header search">
+		<form action="javascript:loadDoc();">
+			<input type="text" id="searchBar" maxlength="25" placeholder=""
+				value="Search junkyard..." autocomplete="off"
+				onMouseDown="searchActive();" onBlur="searchInactive();" /><input
+				type="submit" id="searchBtn" value="Go!" />
+		</form>
+	</div>
+
+	<div id="main-content-items">
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="mainContent.js"></script>
+		<br> <br> <br>
+
+
+	</div>
+
+
+	<div id="toggle">
+		<br> <br> <br> <a class="fun"
+			title="Access Multimedia content"
+			href="javascript:toggleDiv('toggleContent');"
+			style="border: 1px solid #000000; -webkit-border-top-left-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-bottomleft: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; padding: 10px; font-size: 30px;">
+			Toggle Fun Stuff</a> <br> <br> <br>
+	</div>
+
+	<div id="toggleContent">
+
+		<main id="news">
+
+		<section>
+			<h2>Multimedia content</h2>
+			<br> <br>
+			<section>
+				<h4>Audio</h4>
+				<article>
+					<header>
+						<h5>refs to local mp3 files</h5>
+					</header>
+					<p>
+						<audio controls="controls">
+							<source src="Images/Time.mp3" type="audio/mp3">
+						</audio>
+						<br>
+						<audio controls="controls">
+							<source src="Images/UsandThem.mp3" type="audio/mp3">
+						</audio>
+					</p>
+				</article>
+			</section>
+
+			<section>
+				<h4>Video</h4>
+				<article>
+					<header>
+						<h5>refs to local video files</h5>
+					</header>
+					<p>
+
+						<video id="video" width="500" height="250"
+							src="Images/GreatGig.mp4" controls>
+						</video>
+
+						<video width="500" height="260" src="Images/Another.mp4" controls>
+						</video>
+					</p>
+					<header>
+						<br>
+						<h5>refs to youtube video files</h5>
+					</header>
+					<p>
+						<iframe width="500" height="260"
+							src="//www.youtube.com/embed/deU_uwlNpOo"> </iframe>
+						<br>
+						<iframe width="500" height="260"
+							src="//www.youtube.com/embed/DLOth-BuCNY"> </iframe>
+						<br>
+						<iframe width="500" height="260"
+							src="//www.youtube.com/embed/PJyuxz9CFuk"> </iframe>
+					</p>
+				</article>
+			</section>
+
+
+		</section>
+
+		</main>
+
+	</div>
+
+	<aside>
+		<h4>Site under construction</h4>
+		<p>Any suggestions are welcome.</p>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer"> <img
+			style="border: 1px; width: 88px; height: 31px"
+			src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+		</a>
+	</aside>
+
+	<div id="counter12">
+		<a href='http://www.counter12.com'><img
+			src='http://www.counter12.com/img-682Wy80aaD24Z5xx-24.gif'
+			alt='counter12'></a>
+		<script type='text/javascript'
+			src='http://www.counter12.com/ad.js?id=682Wy80aaD24Z5xx'></script>
+	</div>
+	<footer>
+
+		<nav>
+			<ul>
+				<li class="news"><a href="index.html">Home</a></li>
+				<li class="news"><a href="archive.html">Archive</a></li>
+				<li class="news"><a href="about.html">About</a></li>
+				<li class="news"><a href="news.html">News</a></li>
+			</ul>
+		</nav>
+		<!-- <h4>
+			<span>Java Platform, Enterprise Edition (Java EE) </span>
+		</h4> -->
+	</footer>
+</body>
+</html>
