@@ -72,8 +72,8 @@ function loadDoc()
 		if (((matches) & (json[i].type != "funstuff")) ||
 		    ((matches) & (searchBar.value == "funstuff")))
 		{
-		    text += "<div class=\"item-info-holder\">"
-		    text += "<div class=\"image-holder position-img\">"
+		    text += "<div class=\"item-info-holder mobile-collapse\">"
+		    text += "<div class=\"image-holder position-img mobile-collapse\">"
 
 		    text += "<a href=\"#\" onClick=\"loadItem(" + json[i].id
 			    + ")\">"
