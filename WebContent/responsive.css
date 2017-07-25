@@ -1,34 +1,43 @@
-div.one-third {
+@media screen and (max-width: 600px) { /* 3col 900px wide tablet */
+	/* 
+div.one-third {      
 	width: 47.5%;
 }
-
 div.one-third-second {
 	margin: 0;
 }
-
 div.one-third-last {
 	clear: both;
 	float: none;
 	width: auto;
-	padding: 20px 0 0 0;
+	padding: 0px;
 }
-
 div.nav ul li {
-	width: 25%;
+	width: auto;
 	border-bottom: 1px solid #bababa;
-	float: right
+	float: none; } */
 }
 
-@media screen and (max-width: 620px) {
-	div.nav ul li {
-		width: 33%;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	div.nav ul li {
+@media screen and (max-width: 600px) {
+	/* navigation 2x2col smartphone*/
+	nav ul {
 		width: 50%;
-		font-size: 85%;
+		margin: 4px 2px 4px 0px;
+		padding: 2px 0px 2px 2px;
+	}
+	nav ul li {
+		font-size: 90%;
+		background-color: red;
+		width: 42%;
+		margin: 4px 2px 4px 0px;
+		padding: 4px 0px 4px 0px;
+	}
+	div.header {
+		max-width: 100%;
+		height: auto;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	body.mobile-collapse {
 		width: auto;
@@ -37,31 +46,36 @@ div.nav ul li {
 		margin-left: auto;
 	}
 	div.mobile-collapse {
-		width: auto;
+		max-width: 100%;
+		height: auto;
 		float: none;
 		margin-right: auto;
 		margin-left: auto;
 	}
 	#main-content-items.mobile-collapse {
-		width: auto;
+		max-width: 100%;
+		height: auto;
 		float: none;
 		margin-right: auto;
 		margin-left: auto;
 	}
 	#toggleContent.mobile-collapse {
-		width: auto;
+		max-width: 100%;
+		height: auto;
 		float: none;
 		margin-right: auto;
 		margin-left: auto;
 	}
 	div.item-info-holder.mobile-collapse {
-		width: auto;
+		max-width: 100%;
+		height: auto;
 		float: none;
 		margin-right: auto;
 		margin-left: auto;
 	}
 	div.image-holder.mobile-collapse {
-		width: auto;
+		max-width: 100%;
+		height: auto;
 		float: none;
 		margin-right: auto;
 		margin-left: auto;
@@ -69,5 +83,15 @@ div.nav ul li {
 	}
 	.hide-mobile {
 		display: none;
+	}
+	.clearfix:before, .clearfix:after {
+		content: "";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+	}
+	.clearfix {
+		*zoom: 1;
 	}
 }

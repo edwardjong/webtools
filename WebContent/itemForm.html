@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>itemform</title>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
@@ -12,13 +14,13 @@
 
 			<label for="filename">Picture (max 2MB, format JPG, GIF or
 				PNG)</label> <br> 
-				<input id="upload" type="file" accept="image/*"
+				<input id="uploadImage" type="file" accept="image/*"
 				onChange="uploadOnChange(this, 'plaatje')" /> <br>
  
 			<label for="filename">Document (max 1MB, format DOC, PDF, MP4
 				or HTML)</label> <br> 
-				<input id="upload" type="file"
-				accept=".doc, .docx, .pdf, .mp4 .html"
+				<input id="uploadDoc" type="file"
+				accept=".doc, .docx, .pdf, .mp4, .html"
 				onChange="uploadOnChange(this, 'doc')" /> <br> 
 
 			<table>

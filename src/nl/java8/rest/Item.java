@@ -2,16 +2,17 @@ package nl.java8.rest;
 
 import java.io.Serializable;
 
+import javax.ejb.Stateless;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
+@Stateless
 @Entity
 public class Item implements Serializable
 {
-
 	private static final long serialVersionUID = 1L;
 
 	@Id

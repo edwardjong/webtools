@@ -37,10 +37,68 @@ div {
 	padding: 10px 10px;
 }
 
+a, a:link, a:visited {
+	color: white;
+	padding: 2px 2px 2px 2px;
+}
+
 nav {
 	background-color: #20416c;
-	padding: 5px;
-	margin-top: 1px;
+ 	padding: 1px; 
+	margin-top: 0px;
+	z-index: 500;
+}
+
+.nav-placeholder {
+	clear: both;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2px 2px 2px 2px;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	background-color: #244571;
+}
+
+.fixed .nav-inner {
+	padding: 2px 2px 2px 2px;
+}
+
+.fixed .nav-inner-most {
+	margin-bottom: 5px;
+	margin-top: 0px;
+	background-color: #11233b;
+	padding-bottom: 5px
+}
+
+nav ul {
+	color: #c0c0c0;
+	padding: 2px 2px 2px 2px;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	margin-top: 0px;
+	display: block;
+	text-decoration: none;
+	padding: 2px 2px;
+	background-color: #9ba8b5;
+	border-right: 2px solid #d5dce4;
+	color: #17222f;
+}
+
+nav ul li a:hover {
+	background-color: #dbe1e8;
+}
+
+nav ul li:last-child a:link, nav ul li:last-child a:visited {
+	border-right: 2px solid #d5dce4;
 }
 
 li {
@@ -50,10 +108,12 @@ li {
 	font-size: 20px;
 	font-variant: small-caps;
 	font-weight: bold;
+	padding: 2px 2px 2px 2px;
+	background-color: #dbe1e8;
 }
 
 li a {
-	color: white;
+	color: grey;
 }
 
 a {
@@ -68,7 +128,7 @@ a {
 
 .spacing_line_thick {
 	width: 100%;
-	background-color: white;
+	/* 	background-color: white; */
 	height: 8px;
 }
 
@@ -125,7 +185,6 @@ button {
 #searchBtn:hover {
 	background: #f6e049;
 	color: #006aca;
-	
 }
 
 /* #admin {
@@ -251,6 +310,7 @@ h5 {
 	margin-right: 4px;
 	padding: 4px;
 }
+
 h6 {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
@@ -263,6 +323,7 @@ h6 {
 	margin-right: 4px;
 	padding: 4px;
 }
+
 .logo {
 	width: 60%;
 	/* 	background-color: Black; */
@@ -423,7 +484,7 @@ td {
 	width: 300px;
 }
 
-ul, a, article, aside, footer, header, main, nav, section {
+ul, a, article, aside, footer, header, main, section {
 	padding: 1px;
 	margin: 1px;
 }
@@ -471,7 +532,7 @@ body#news {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 15px;
 }
-
+/* 
 nav#news {
 	background-color: #20416c;
 	padding: 5px;
@@ -480,8 +541,7 @@ nav#news {
 
 li a {
 	color: white;
-}
-
+} */
 #counter12 {
 	background-color: #f0f0f0;
 	margin-left: auto;
@@ -515,8 +575,6 @@ main#news {
 	float: left;
 	margin-bottom: 10px;
 }
-
-
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }

@@ -28,7 +28,8 @@ public class JaxAccess
 	public List<Item> getItems()
 	{
 		List<Item> itemList = itemService.getItemList();
-		return itemList;
+		System.out.println("itemList " + itemList + " is requested from the server");
+		return itemList;		
 	}
 
 	@GET
@@ -74,7 +75,7 @@ public class JaxAccess
 	{
 		itemService.saveItem(item);
 		
-		System.out.println("Added an item with name " + item.getItemName() + "  "
+		System.out.println("Saved an item with name " + item.getItemName() + "  "     //console output
 				+ item.getNameExt());
 	}
 }
