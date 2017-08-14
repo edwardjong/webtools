@@ -38,13 +38,13 @@ div {
 }
 
 a, a:link, a:visited {
-	color: white;
+	color: black;
 	padding: 2px 2px 2px 2px;
 }
 
 nav {
 	background-color: #20416c;
- 	padding: 1px; 
+	padding: 1px;
 	margin-top: 0px;
 	z-index: 500;
 }
@@ -576,6 +576,15 @@ main#news {
 	margin-bottom: 10px;
 }
 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
