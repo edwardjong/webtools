@@ -1,9 +1,11 @@
 webtools
 
-
-
+todo:
+- GitHub Pages: http://edwardjong.github.io/webtools/  access to jaxrs
 - password login admin
 - upload content remote
+
+done:
 Navigation bar responsive (smartphone), showing 2 columns of menu-options - 07
 Sticky Navigation bar - 07
 Add/Change/Delete - feedback message in browser - 06
