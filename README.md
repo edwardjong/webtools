@@ -1,7 +1,7 @@
 webtools
 
 todo:
-- GitHub Pages: http://edwardjong.github.io/webtools/  access to jaxrs
+- GitHub Pages: http://edwardjong.github.io/webtools/  access to jaxrs backend data
 - password login admin
 - upload content remote
 
