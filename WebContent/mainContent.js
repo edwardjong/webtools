@@ -264,7 +264,8 @@ $(document)
 					document.getElementById("plaatje").value = item.plaatje;
 					document.getElementById("doc").value = item.doc;
 				    }
-				};
+				};	  
+				    
 				xhttp.open("GET", "/webtools/rest/jaxrs/item/"
 					+ id, true); // RESTful webservice JAX-RS
 							 
@@ -295,27 +296,41 @@ $(document)
 			    {
 				if (itemId != "0")
 				{
-				    document
+				    if (itemName != itemNameSaved | nameExt != nameExtSaved)
+				    {
+					document
 					    .getElementById("main-content-items").innerHTML = "Item "
 					    + itemNameSaved
 					    + " "
 					    + nameExtSaved
 					    + " changed to "
 					    + itemName + " " + nameExt;
-				} else
-				{
-
-				    document
+				    }
+				    else
+				    {
+				        document
+					    .getElementById("main-content-items").innerHTML = "Item "
+					    + itemNameSaved
+					    + " "
+					    + nameExtSaved
+					    + " changed  ";					
+				     }
+				}
+				  else
+				{ 
+				      alert(itemName + " " + nameExt + " added ");
+				    /*document
 					    .getElementById("main-content-items").innerHTML = "Item "
 					    + itemName
 					    + " "
 					    + nameExt
-					    + " added"
+					    + " added"*/
 				}
 			    }
 			};
 
 			xhttp.open("POST", "/webtools/rest/jaxrs/item", true); // RESTful webservice JAX-RS
+			alert("Status code: " + this.status);
 			xhttp.setRequestHeader("Content-Type",
 				"application/json");
 			xhttp.send(JSON.stringify(
@@ -331,7 +346,7 @@ $(document)
 			    plaatje : plaatje,
 			    doc : doc
 			}));
-
+			
 		    }
 
 		    function getItemForm()
@@ -379,5 +394,3 @@ $(document)
 
 			xhttp.send();
 		    }
-
-
