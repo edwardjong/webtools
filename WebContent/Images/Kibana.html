@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://www.tutorialspoint.com/kibana/kibana_overview.htm -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./Kibana_files/publishertag.prebid.js.download"></script><style type="text/css">.mui-textfield.mui-textfield--float-label > label {-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out;transition:all .15s ease-out;}</style><style type="text/css">@keyframes mui-btn-inserted{from{transform:none;}to{transform:none;}}.mui-btn{animation-duration:0.0001s;animation-name:mui-btn-inserted;}@keyframes mui-dropdown-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-dropdown-inserted;}@keyframes mui-btn-inserted,mui-dropdown-inserted{from{transform:none;}to{transform:none;}}.mui-btn[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-btn-inserted,mui-dropdown-inserted;}@keyframes mui-tab-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="tab"]{animation-duration:0.0001s;animation-name:mui-tab-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > input{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > textarea{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-select-inserted{from{transform:none;}to{transform:none;}}.mui-select > select{animation-duration:0.0001s;animation-name:mui-select-inserted;}@keyframes mui-node-inserted{from{transform:none;}to{transform:none;}}.mui-select > select ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-inserted;}@keyframes mui-node-disabled{from{transform:none;}to{transform:none;}}.mui-select > select:disabled ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-disabled;}</style>
+<title>Kibana - Overview - Tutorialspoint</title>
+
+<meta name="description" content="Kibana - Overview - Kibana is an open source browser based visualization tool mainly used to analyse large volume of logs in the form of line graph, bar graph, pie charts , heat ma">
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code">
+<link rel="canonical" href="https://www.tutorialspoint.com/kibana/kibana_overview.htm">
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="./Kibana_files/style-min-v1.css">
+<script src="./Kibana_files/amp4ads-host-v0.js.download"></script><script src="./Kibana_files/pubads_impl_rendering_2019111201.js.download"></script><script src="./Kibana_files/osd.js.download"></script><script src="./Kibana_files/f(4).txt" id="google_shimpl"></script><script type="text/javascript" async="" src="./Kibana_files/analytics.js.download"></script><script src="./Kibana_files/script-min-v1.js.download"></script><link rel="stylesheet" type="text/css" href="./Kibana_files/prettify.css">
+<script src="./Kibana_files/saved_resource" defer="" async=""></script>
+<script>var vitag = vitag || {};</script>
+<script>vitag.outStreamConfig = { enablePC: false, enableMobile: false };</script>  
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./Kibana_files/adpushup.js.download" type="text/javascript" async=""></script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js?ts=1572590509085'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./Kibana_files/adRecover.js.download" type="text/javascript" async=""></script>
+<style>
+.right-menu .mui-btn {
+    background-color:#e52d7b;
+}
+a.demo {
+    background:#e52d7b;
+}
+li.heading {
+    background:#e52d7b;
+}
+.course-box{background:#e52d7b}
+.home-intro-sub p{color:#e52d7b}
+</style>
+<script type="text/javascript" async="" src="./Kibana_files/jquery.min.js.download"></script><script src="./Kibana_files/saved_resource(1)"></script><script src="./Kibana_files/gpt.js.download" async=""></script><script src="./Kibana_files/cmp.complete.bundle.js.download"></script><script>window._BidFilter={site_id:1046,pbjsKey:'vlipb',checkAudio:false};</script><script src="./Kibana_files/bidfilter.js.download"></script><script src="./Kibana_files/prebid-v2.40.0.js.download"></script><script src="./Kibana_files/gpt.js(1).download"></script><script src="./Kibana_files/viPlayer_v25.js.download"></script><script src="./Kibana_files/ima3.js.download"></script><script src="./Kibana_files/sf_host.min.js.download"></script><script src="./Kibana_files/apstag.js.download"></script><link rel="preload" href="./Kibana_files/f(5).txt" as="script"><script type="text/javascript" src="./Kibana_files/f(5).txt"></script><link rel="preload" href="./Kibana_files/f(6).txt" as="script"><script type="text/javascript" src="./Kibana_files/f(6).txt"></script><script src="./Kibana_files/pubads_impl_2019111201.js.download" async=""></script><script data-ad-client="ca-pub-3191894791526522" async="" src="./Kibana_files/f(7).txt" data-checked-head="true"></script><link rel="preload" href="./Kibana_files/f(4).txt" as="script"><style>.vi-instream--container{position: relative;display: inline-block;}.vi-instream--play-handler{cursor:pointer;z-index:9997;position: absolute;background-color: rgba(0, 0, 0, 0.3); top: 0;left: 0; width: 100%;height: 100%;}.vi-instream--play-button{width: 100px; height: 100px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); fill:#282828;}.vi-instream--play-button g{fill: #fff;}</style><script type="text/javascript" id="cczedcc-plg-analytics" src="./Kibana_files/js"></script><style type="text/css">.app_gdpr--2k2uB{
+  /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */font-family:Helvetica Neue,arial,sans-serif;font-weight:400;font-size:16px;line-height:25px}.app_gdpr--2k2uB html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}.app_gdpr--2k2uB body{margin:0}.app_gdpr--2k2uB article,.app_gdpr--2k2uB aside,.app_gdpr--2k2uB footer,.app_gdpr--2k2uB header,.app_gdpr--2k2uB nav,.app_gdpr--2k2uB section{display:block}.app_gdpr--2k2uB h1{font-size:2em;margin:.67em 0}.app_gdpr--2k2uB figcaption,.app_gdpr--2k2uB figure,.app_gdpr--2k2uB main{display:block}.app_gdpr--2k2uB figure{margin:1em 40px}.app_gdpr--2k2uB hr{box-sizing:content-box;height:0;overflow:visible}.app_gdpr--2k2uB pre{font-family:monospace,monospace;font-size:1em}.app_gdpr--2k2uB a{background-color:transparent;-webkit-text-decoration-skip:objects}.app_gdpr--2k2uB abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}.app_gdpr--2k2uB b,.app_gdpr--2k2uB strong{font-weight:inherit;font-weight:bolder}.app_gdpr--2k2uB code,.app_gdpr--2k2uB kbd,.app_gdpr--2k2uB samp{font-family:monospace,monospace;font-size:1em}.app_gdpr--2k2uB dfn{font-style:italic}.app_gdpr--2k2uB mark{background-color:#ff0;color:#000}.app_gdpr--2k2uB small{font-size:80%}.app_gdpr--2k2uB sub,.app_gdpr--2k2uB sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}.app_gdpr--2k2uB sub{bottom:-.25em}.app_gdpr--2k2uB sup{top:-.5em}.app_gdpr--2k2uB audio,.app_gdpr--2k2uB video{display:inline-block}.app_gdpr--2k2uB audio:not([controls]){display:none;height:0}.app_gdpr--2k2uB img{border-style:none}.app_gdpr--2k2uB svg:not(:root){overflow:hidden}.app_gdpr--2k2uB button,.app_gdpr--2k2uB input,.app_gdpr--2k2uB optgroup,.app_gdpr--2k2uB select,.app_gdpr--2k2uB textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}.app_gdpr--2k2uB button,.app_gdpr--2k2uB input{overflow:visible}.app_gdpr--2k2uB button,.app_gdpr--2k2uB select{text-transform:none}.app_gdpr--2k2uB [type=reset],.app_gdpr--2k2uB [type=submit],.app_gdpr--2k2uB button,.app_gdpr--2k2uB html [type=button]{-webkit-appearance:button}.app_gdpr--2k2uB [type=button]::-moz-focus-inner,.app_gdpr--2k2uB [type=reset]::-moz-focus-inner,.app_gdpr--2k2uB [type=submit]::-moz-focus-inner,.app_gdpr--2k2uB button::-moz-focus-inner{border-style:none;padding:0}.app_gdpr--2k2uB [type=button]:-moz-focusring,.app_gdpr--2k2uB [type=reset]:-moz-focusring,.app_gdpr--2k2uB [type=submit]:-moz-focusring,.app_gdpr--2k2uB button:-moz-focusring{outline:1px dotted ButtonText}.app_gdpr--2k2uB fieldset{padding:.35em .75em .625em}.app_gdpr--2k2uB legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}.app_gdpr--2k2uB progress{display:inline-block;vertical-align:baseline}.app_gdpr--2k2uB textarea{overflow:auto}.app_gdpr--2k2uB [type=checkbox],.app_gdpr--2k2uB [type=radio]{box-sizing:border-box;padding:0}.app_gdpr--2k2uB [type=number]::-webkit-inner-spin-button,.app_gdpr--2k2uB [type=number]::-webkit-outer-spin-button{height:auto}.app_gdpr--2k2uB [type=search]{-webkit-appearance:textfield;outline-offset:-2px}.app_gdpr--2k2uB [type=search]::-webkit-search-cancel-button,.app_gdpr--2k2uB [type=search]::-webkit-search-decoration{-webkit-appearance:none}.app_gdpr--2k2uB ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.app_gdpr--2k2uB details,.app_gdpr--2k2uB menu{display:block}.app_gdpr--2k2uB summary{display:list-item}.app_gdpr--2k2uB canvas{display:inline-block}.app_gdpr--2k2uB [hidden],.app_gdpr--2k2uB template{display:none}.app_gdpr--2k2uB *{box-sizing:border-box}.app_gdpr--2k2uB a{text-decoration:none;color:#41afbb;cursor:pointer}.app_gdpr--2k2uB a:hover{color:#27686f}.app_gdpr--2k2uB table{margin:0}.app_gdpr--2k2uB input:not([type]),.app_gdpr--2k2uB input[type=password],.app_gdpr--2k2uB input[type=text]{box-sizing:border-box;box-shadow:inset 0 3px 3px rgba(0,0,0,.05);background-color:#fff;border-radius:4px;border:1px solid #c5c5c5;color:#333;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1em;margin:0;padding:0 9px;height:28px}</style><style type="text/css">.details_details--3oWod{display:flex;flex-direction:column;flex:1;height:100%}.details_details--3oWod .details_body--31iMA{flex:1;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:25px}@media screen and (max-width:767px){.details_details--3oWod .details_body--31iMA{padding-top:40px}}.details_details--3oWod .details_footer--1oDeu{display:flex;flex:0 1 70px;border-top:1px solid hsla(0,0%,47%,.65)}@media screen and (max-width:767px){.details_details--3oWod .details_footer--1oDeu{flex:0 1 50px}}.details_details--3oWod .details_save--1ja7w{background:#7ebf61;border-radius:0;flex:1}.details_details--3oWod .details_back--2ZlLi{background:#41afbb;border-radius:0;flex:1}.details_title--3NjQA{font-weight:700;font-size:22px;padding:5px 0;color:#333}@media screen and (max-width:767px){.details_title--3NjQA{font-size:18px}}.details_description--2fo80{padding-bottom:20px;color:#999}@media screen and (max-width:767px){.details_description--2fo80{font-size:14px;line-height:20px}}</style><style type="text/css">button.button_button--lgX0P,input[type=button].button_button--lgX0P{cursor:pointer;outline:none;padding:1em;background:#41afbb;color:#fff;border:none;border-radius:4px;font-size:18px}@media screen and (max-width:767px){button.button_button--lgX0P,input[type=button].button_button--lgX0P{font-size:14px;padding:0}}button.button_button--lgX0P:hover,input[type=button].button_button--lgX0P:hover{color:#27686f}button.button_button--lgX0P.button_invert--1bse9,input[type=button].button_button--lgX0P.button_invert--1bse9{background:#fff;border:2px solid #41afbb;color:#41afbb}button.button_button--lgX0P.button_invert--1bse9:hover,input[type=button].button_button--lgX0P.button_invert--1bse9:hover{color:#8bcfd7}</style><style type="text/css">div.vendors_vendors--8OdK0{display:flex;flex-direction:column}div.vendors_vendors--8OdK0 .vendors_header--1SG4L{display:flex;flex-shrink:0}@media screen and (max-width:767px){div.vendors_vendors--8OdK0 .vendors_header--1SG4L{flex-direction:column;align-items:center}}div.vendors_vendors--8OdK0 .vendors_title--dWx7J{flex:1;font-size:24px;font-weight:700}@media screen and (max-width:767px){div.vendors_vendors--8OdK0 .vendors_title--dWx7J{text-align:center;padding-bottom:5px}}div.vendors_vendors--8OdK0 .vendors_button--3_KzL{min-width:140px;padding:8px;white-space:nowrap}div.vendors_vendors--8OdK0 .vendors_button--3_KzL:first-child{margin-right:10px}@media screen and (max-width:767px){div.vendors_vendors--8OdK0 .vendors_button--3_KzL{flex:1}}div.vendors_vendors--8OdK0 .vendors_options--3Zczf{display:flex}@media screen and (max-width:767px){div.vendors_vendors--8OdK0 .vendors_options--3Zczf{width:100%}}div.vendors_vendors--8OdK0 .vendors_description--2KZp_{margin:10px 0;flex-shrink:0}div.vendors_vendors--8OdK0 .vendors_vendorHeader--2c_Zd{display:flex;flex-shrink:0}div.vendors_vendors--8OdK0 .vendors_vendorContent--2L1FV{display:flex}div.vendors_vendors--8OdK0 .vendors_vendorList--2xqzv{margin-top:10px}div.vendors_vendors--8OdK0 .vendors_vendorName--lLRCk{min-height:30px;display:flex;align-items:center;font-size:14px}div.vendors_vendors--8OdK0 .vendors_vendorName--lLRCk svg{vertical-align:middle}@media screen and (max-width:767px){div.vendors_vendors--8OdK0 .vendors_vendorName--lLRCk{font-size:12px;line-height:14px}}div.vendors_vendors--8OdK0 .vendors_allowAllToggle--3xcbx{text-align:right}@media screen and (max-width:767px){div.vendors_vendors--8OdK0 .vendors_allowAllToggle--3xcbx{font-size:14px;line-height:16px;margin-bottom:10px;font-weight:700}}div.vendors_vendors--8OdK0 table{width:100%;border-collapse:collapse}div.vendors_vendors--8OdK0 table thead tr{border:1px solid hsla(0,0%,47%,.65);font-size:12px}div.vendors_vendors--8OdK0 table tr{min-height:40px}div.vendors_vendors--8OdK0 table tr th{font-weight:700}div.vendors_vendors--8OdK0 table tr td,div.vendors_vendors--8OdK0 table tr th{padding:5px;font-size:12px}div.vendors_vendors--8OdK0 table tr td:first-child,div.vendors_vendors--8OdK0 table tr th:first-child{width:100%;text-align:left}div.vendors_vendors--8OdK0 table tr td:last-child,div.vendors_vendors--8OdK0 table tr th:last-child{padding-right:15px;white-space:nowrap;text-align:right}div.vendors_vendors--8OdK0 table tr.vendors_even--2jd4F{background-color:hsla(0,0%,56%,.16)}div.vendors_vendors--8OdK0 .vendors_allowColumn--2O5Bm{text-align:center}div.vendors_vendors--8OdK0 .vendors_allowSwitch--ZYymO{display:flex;align-items:center}div.vendors_vendors--8OdK0 .vendors_policy--2QHMf{margin:0 5px;fill:#41afbb}</style><style type="text/css">.switch_switch--YfiyU{cursor:pointer;display:inline-block;height:28px;position:relative;user-select:none;width:50px}.switch_switch--YfiyU .switch_isDisabled--2LpDX{cursor:not-allowed}.switch_switch--YfiyU .switch_native--3vL1-{opacity:0}.switch_switch--YfiyU .switch_visualizationContainer--1u7wB{background-color:hsla(0,0%,47%,.65);border-radius:11px;height:22px;left:3px;position:absolute;top:3px;transition:.1s linear;width:44px}.switch_switch--YfiyU .switch_visualizationGlow--3N7Vv{background-color:#41afbb;border-radius:9px;height:18px;left:5px;opacity:0;position:absolute;top:5px;transition:.1s linear;width:18px}.switch_switch--YfiyU .switch_visualizationHandle--33XDu{background-color:#fff;border-radius:8px;height:16px;left:6px;position:absolute;top:6px;transition:.1s linear;width:16px}.switch_switch--YfiyU:hover .switch_visualizationGlow--3N7Vv{opacity:.3;transform:scale(1.556)}.switch_switch--YfiyU:hover .switch_visualizationHandle--33XDu{transform:scale(1.125)}.switch_switch--YfiyU.switch_isSelected--17KWm .switch_visualizationContainer--1u7wB{background-color:#41afbb}.switch_switch--YfiyU.switch_isSelected--17KWm .switch_visualizationGlow--3N7Vv,.switch_switch--YfiyU.switch_isSelected--17KWm .switch_visualizationHandle--33XDu{transform:translate(22px)}.switch_switch--YfiyU.switch_isSelected--17KWm:hover .switch_visualizationGlow--3N7Vv{transform:translate(22px) scale(1.556)}.switch_switch--YfiyU.switch_isSelected--17KWm:hover .switch_visualizationHandle--33XDu{transform:translate(22px) scale(1.125)}</style><style type="text/css">.vendorList_vendorList--2NVRm .vendorList_even--2r9Bw{background:hsla(0,0%,56%,.16)}.vendorList_vendorList--2NVRm table{border-collapse:collapse;margin-top:10px;width:100%}.vendorList_vendorList--2NVRm table tr td{padding:10px}.vendorList_vendorList--2NVRm .vendorList_customize--27Vw6{margin-bottom:30px;display:block}@media screen and (max-width:767px){.vendorList_vendorList--2NVRm .vendorList_customize--27Vw6{font-size:14px;line-height:16px}}.vendorList_vendorList--2NVRm .vendorList_company--Aiex8{min-height:20px;align-items:center}.vendorList_vendorList--2NVRm .vendorList_policy--3FMXd{fill:#41afbb;font-size:14px;margin:0 5px}.vendorList_vendorList--2NVRm .vendorList_policy--3FMXd svg{vertical-align:middle;margin:0 5px}@media screen and (max-width:767px){.vendorList_vendorList--2NVRm .vendorList_policy--3FMXd{font-size:12px;line-height:14px}}</style><style type="text/css">.summary_summary--39BrN .summary_purposeItems--1gHBj{padding-bottom:20px}.summary_summary--39BrN .summary_purposeItem--3WVlI{display:flex;border-top:1px solid hsla(0,0%,47%,.65);padding:8px 0;color:#999}.summary_summary--39BrN .summary_purposeItem--3WVlI:last-child{border-bottom:1px solid hsla(0,0%,47%,.65)}@media screen and (max-width:767px){.summary_summary--39BrN .summary_purposeItem--3WVlI{padding:15px 0;display:block;line-height:16px}}.summary_summary--39BrN .summary_learnMore--QHtl7{font-size:14px}@media screen and (max-width:767px){.summary_summary--39BrN .summary_learnMore--QHtl7{font-size:12px}}.summary_summary--39BrN .summary_purposeTitle--2P0K-{flex:1;font-size:18px}@media screen and (max-width:767px){.summary_summary--39BrN .summary_purposeTitle--2P0K-{font-size:14px;display:block;margin-bottom:0}}</style><style type="text/css">.purposeList_purposeList--1Pzbn ul{margin:0 0 20px;padding:0 0 0 30px}.purposeList_purposeList--1Pzbn ul li{color:#999;padding:5px 0}@media screen and (max-width:767px){.purposeList_purposeList--1Pzbn ul li{font-size:14px;padding:2px 0}}@media screen and (max-width:767px){.purposeList_purposeList--1Pzbn a{font-size:14px;line-height:16px;display:block}}</style><style type="text/css">.popup_popup--1TXMW{display:none;z-index:99999;justify-content:center;align-items:center}.popup_overlay--2rgA3,.popup_popup--1TXMW{position:fixed;top:0;bottom:0;left:0;right:0}.popup_overlay--2rgA3{background-color:rgba(0,0,0,.5)}.popup_content--2JBXA{width:650px;height:700px;background:#fff;display:flex;align-items:center;position:relative}@media screen and (max-width:767px){.popup_content--2JBXA{width:98%;height:98%}}</style><style type="text/css">.closebutton_closeButton--3abym{fill:#7b7b7b;width:30px;height:30px;cursor:pointer;position:absolute;top:15px;right:25px}@media screen and (max-width:767px){.closebutton_closeButton--3abym{right:15px}}.closebutton_closeButton--3abym.closebutton_hasBorder--1W5To{background-color:#fff;border-radius:50%;box-shadow:0 0 0 2px hsla(0,0%,47%,.65)}</style><style type="text/css">.banner_banner--3pjXd{position:fixed;right:0;left:0;bottom:0;z-index:99999;color:#999;background:#fff;font-size:16px;max-height:100%;transition:bottom .5s ease-in-out,opacity .5s linear;box-shadow:0 0 5px #41afbb;padding:15px 30px}@media screen and (max-width:767px){.banner_banner--3pjXd{margin-top:-80px;padding:15px 20px;overflow:auto}}.banner_banner--3pjXd.banner_hidden--MXmJ_{pointer-events:none;bottom:-250px;opacity:0}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt{display:flex}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt{display:block}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt{flex:1;line-height:16px}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt{font-size:12px}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_title--2vgc3{font-size:22px;color:#333;padding:15px 0}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_title--2vgc3{font-size:16px;padding:5px 0 10px}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1{margin:15px 0 0}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1{margin:10px 0 20px}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m{margin:0 20px 6px -2px}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m{margin:0 20px 3px -2px}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m .banner_detailExpand--2vF7k{color:#7b7b7b}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m a svg{vertical-align:middle;margin-right:5px;position:relative;top:-1px;transform:rotate(-90deg);transition:.5s ease;fill:#41afbb}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m .banner_optionDetails--1k10q{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(0,1,0,1)}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m .banner_optionDetails--1k10q ul{margin:5px 0 15px;padding:0 0 0 36px}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m.banner_expanded--2lZxB a svg{transform:rotate(0deg)}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_info--2XcOt .banner_options--1jXz1 .banner_option--1Jt2m.banner_expanded--2lZxB .banner_optionDetails--1k10q{margin-left:21px;max-height:600px;transition:max-height 1s ease-in-out}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_consent--2qj6F{display:flex;flex:0;white-space:nowrap;margin-left:30px}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_consent--2qj6F{margin-left:0}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_consent--2qj6F a{display:block;position:relative;margin-top:30px;line-height:48px;height:48px;text-align:center;width:100%;border:1px solid #41afbb;padding:0 15px;flex:1 0 40%}@media screen and (max-width:767px){.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_consent--2qj6F a{top:auto;margin:0;line-height:38px;font-size:14px;height:38px}}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_consent--2qj6F a.banner_learnMore--3KMk_{color:#41afbb}.banner_banner--3pjXd .banner_content--1bZDZ .banner_message--2Rvgt .banner_consent--2qj6F a.banner_continue--2NyXA{margin-left:10px;background:#41afbb;color:#fff}.banner_banner--3pjXd .banner_infoExpanded--1AHSZ{padding:0 0 30px;min-height:200px}.banner_banner--3pjXd .banner_infoExpanded--1AHSZ ul{margin:0;padding:0 0 0 20px;list-style-type:square}</style><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-36/html/container.html"><script src="./Kibana_files/f(7).txt"></script><script src="./Kibana_files/f(7).txt"></script><script src="./Kibana_files/f(7).txt"></script><script src="./Kibana_files/f(7).txt"></script><script src="./Kibana_files/f(7).txt"></script><script src="./Kibana_files/f(7).txt"></script></head>
+<body>
+<header id="header" class="">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com/" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="./Kibana_files/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="https://www.tutorialspoint.com/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="https://www.tutorialspoint.com/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="https://www.tutorialspoint.com/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="https://www.tutorialspoint.com/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="https://www.tutorialspoint.com/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="https://www.tutorialspoint.com/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="https://www.tutorialspoint.com/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="https://www.tutorialspoint.com/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="https://www.tutorialspoint.com/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="https://www.tutorialspoint.com/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="https://www.tutorialspoint.com/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="https://www.tutorialspoint.com/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="https://www.tutorialspoint.com/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="https://www.tutorialspoint.com/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="https://www.tutorialspoint.com/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="https://www.tutorialspoint.com/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="https://www.tutorialspoint.com/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == &#39;Search your favorite tutorials...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search your favorite tutorials...&#39;;}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown" type="button">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="./Kibana_files/kibana-mini-logo.jpg" alt="Kibana Tutorial">
+</div>
+<ul class="toc chapters">
+<li class="heading">Kibana Tutorial</li>
+<li><a href="https://www.tutorialspoint.com/kibana/index.htm">Kibana - Home</a></li>
+<li style="background-color: rgb(214, 214, 214);"><a href="https://www.tutorialspoint.com/kibana/kibana_overview.htm">Kibana - Overview</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_environment_setup.htm">Kibana - Environment Setup</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_introduction_to_elk_stack.htm">Kibana - Introduction To Elk Stack</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_loading_sample_data.htm">Kibana - Loading Sample Data</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_management.htm">Kibana - Management</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_discover.htm">Kibana - Discover</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_aggregation_and_metrics.htm">Kibana - Aggregation And Metrics</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_create_visualization.htm">Kibana - Create Visualization</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_charts.htm">Kibana - Working With Charts</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_graphs.htm">Kibana - Working With Graphs</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_heat_map.htm">Kibana - Working With Heat Map</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_coordinate_map.htm">Working With Coordinate Map</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_region_map.htm">Kibana - Working With Region Map</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_guage_and_goal.htm">Working With Guage And Goal</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_working_with_canvas.htm">Kibana - Working With Canvas</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_create_dashboard.htm">Kibana - Create Dashboard</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_timelion.htm">Kibana - Timelion</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_dev_tools.htm">Kibana - Dev Tools</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_monitoring.htm">Kibana - Monitoring</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_creating_reports_using_kibana.htm">Creating Reports Using Kibana</a></li>
+<li class="heading">Kibana Useful Resources</li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_quick_guide.htm">Kibana - Quick Guide</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_useful_resources.htm">Kibana - Useful Resources</a></li>
+<li><a href="https://www.tutorialspoint.com/kibana/kibana_discussion.htm">Kibana - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div style="height:250px;">
+<div id="00000001-24e61ca5-f9be-4264-aa20-4ebd0553eea9" class="_ap_apex_ad" data-section="00000001-24e61ca5-f9be-4264-aa20-4ebd0553eea9" data-orig-id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" data-render-time="1573834817523" style="width: 300px; height: 250px; display: block; margin: 10px auto; text-align: center;" data-refresh-time="1573834826010" data-timeout="165">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+<div id="ADP_40046_300x250_00000001-24e61ca5-f9be-4264-aa20-4ebd0553eea9" data-google-query-id="CI2Y3srP7OUCFUdx4AodKDUJkg">
+
+<div id="google_ads_iframe_/103512698/21871305451_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/21871305451_0" title="3rd party ad content" name="google_ads_iframe_/103512698/21871305451_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true" src="./Kibana_files/saved_resource(10).html"></iframe></div></div></div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>Kibana - Overview</h1>
+<hr>
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center;" class="google-top-ads">
+<div id="00000001-809fd809-a42b-409e-878a-c87271a9ccd7" class="_ap_apex_ad" max-height="150" data-section="00000001-809fd809-a42b-409e-878a-c87271a9ccd7" data-orig-id="3584b306-b0ce-4f40-8e35-2d32d6c00d35" data-render-time="1573834817534" data-refresh-time="1573834910178" data-timeout="1055" style="display: block; margin: 10px auto; text-align: center;">
+<script>
+    var adpushup = adpushup || {};
+    adpushup.que = adpushup.que || [];
+    adpushup.que.push(function() {
+         adpushup.triggerAd("3584b306-b0ce-4f40-8e35-2d32d6c00d35");
+    });
+</script>
+<div id="ADP_40046_responsivexresponsive_00000001-809fd809-a42b-409e-878a-c87271a9ccd7" data-google-query-id="CMSU4vbP7OUCFUs64AodBgEBZA">
+
+<div id="google_ads_iframe_/103512698/21872816647_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/21872816647_0" title="3rd party ad content" name="google_ads_iframe_/103512698/21872816647_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="r" data-load-complete="true" src="./Kibana_files/saved_resource(11).html"></iframe></div></div></div>
+</div>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/kibana/index.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/kibana/kibana_environment_setup.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clear"></div>
+<p><b>Kibana</b> is an open source browser based visualization tool mainly used to analyse large volume of logs in the form of line graph, bar graph, pie charts , heat maps, region maps, coordinate maps, gauge, goals, timelion etc. The visualization makes it easy to predict or to see the changes in trends of errors or other significant events of the input source.Kibana works in sync with Elasticsearch and Logstash which together forms the so called <b>ELK</b> stack.</p>
+<h2>What is ELK Stack?</h2>
+<p><b>ELK</b> stands for Elasticsearch, Logstash, and Kibana. <b>ELK</b> is one of the popular log management platform used worldwide for log analysis. In the ELK stack, Logstash extracts the logging data or other events from different input sources. It processes the events and later stores them in Elasticsearch.</p>
+<p><b>Kibana</b> is a visualization tool, which accesses the logs from Elasticsearch and is able to display to the user in the form of line graph, bar graph, pie charts etc.</p>
+<p>The basic flow of ELK Stack is shown in the image here −</p>
+<img class="full-width" src="./Kibana_files/elk_stack.jpg" alt="ELK Stack">
+<p>Logstash is responsible to collect the data from all the remote sources where the logs are filed and pushes the same to Elasticsearch.</p>
+<p>Elasticsearch acts as a database where the data is collected and Kibana uses the data from Elasticsearch to represent the data to the user in the form of bargraphs, pie charts, heat maps as shown below −</p>
+<img class="full-width" src="./Kibana_files/elastic_search.jpg" alt="Elastic search">
+<p>It shows the data on real time basis, for example, day-wise or hourly to the user. Kibana UI is user friendly and very easy for a beginner to understand.</p>
+<h2>Features of Kibana</h2>
+<p>Kibana offers its users the following features −</p>
+<h3>Visualization</h3>
+<p>Kibana has a lot of ways to visualize data in an easy way. Some of the ones which are commonly used are vertical bar chart, horizontal bar chart, pie chart, line graph, heat map etc.</p>
+<h3>Dashboard</h3>
+<p>When we have the visualizations ready, all of them can be placed on one board – the Dashboard. Observing different sections together gives you a clear overall idea about what exactly is happening.</p>
+<h3>Dev Tools</h3>
+<p>You can work with your indexes using dev tools. Beginners can add dummy indexes from dev tools and also add, update, delete the data and use the indexes to create visualization.</p>
+<h3>Reports</h3>
+<p>All the data in the form of visualization and dashboard can be converted to reports (CSV format), embedded in the code or in the form of URLs to be shared with others.</p>
+<h3>Filters and Search query</h3>
+<p>You can make use of filters and search queries to get the required details for a particular input from a dashboard or visualization tool.</p>
+<h3>Plugins</h3>
+<p>You can add third party plugins to add some new visualization or also other UI addition in Kibana.</p>
+<h3>Coordinate and Region Maps</h3>
+<p>A coordinate and region map in Kibana helps to show the visualization on the geographical map giving a realistic view of the data.</p>
+<h3>Timelion</h3>
+<p>Timelion, also called as <b>timeline</b> is yet another visualization tool which is mainly used for time based data analysis. To work with timeline, we need to use simple expression language which helps us connect to the index and also perform calculations on the data to obtain the results we need. It helps more in comparison of data to the previous cycle in terms of week , month etc.</p>
+<h3>Canvas</h3>
+<p>Canvas is yet another powerful feature in Kibana. Using canvas visualization, you can represent your data in different colour combinations, shapes, texts, multiple pages basically called as workpad.</p>
+<h2>Advantages of Kibana</h2>
+<p>Kibana offers the following advantages to its users −</p>
+<ul class="list">
+<li><p>Contains open source browser based visualization tool mainly used to analyse large volume of logs in the form of line graph, bar graph, pie charts, heat maps etc.</p></li>
+<li><p>Simple and easy for beginners to understand.</p></li>
+<li><p>Ease of conversion of visualization and dashboard into reports.</p></li>
+<li><p>Canvas visualization help to analyse complex data in an easy way.</p></li>
+<li><p>Timelion visualization in Kibana helps to compare data backwards to understand the performance better.</p></li>
+</ul>
+<h2>Disadvantages of Kibana</h2>
+<ul class="list">
+<li><p>Adding of plugins to Kibana can be very tedious if there is version mismatch.</p></li>
+<li><p>You tend to face issues when you want to upgrade from older version to a new one.</p></li>
+</ul>
+<div class="mui-container-fluid button-borders show">
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/kibana/index.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/kibana/kibana_environment_setup.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div>
+   <div id="vi_bottom_ads"><div class="adsbyvli" data-ad-slot="vi_9013190" data-id="vi_9013190_1" style="display: block !important; max-width: 580px; position: relative !important; margin: 0px auto !important; z-index: 0 !important;"><div id="vi_9013190_1" data-ad-slot="vi_9013190" data-google-query-id="CKPOsefP7OUCFcTGuwgdB7sCGQ" style="width: 580px; height: 400px; display: block;"><script async="" src="./Kibana_files/f(7).txt"></script> <!-- tutorialspoint.com_pb_580x400 --> <ins class="adsbygoogle" style="display:inline-block;width:580px;height:400px" data-ad-client="ca-pub-3275635049946283" data-ad-slot="3814634077" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:400px;margin:0;padding:0;position:relative;visibility:visible;width:580px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:400px;margin:0;padding:0;position:relative;visibility:visible;width:580px;background-color:transparent;"><iframe width="580" height="400" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:580px;height:400px;" src="./Kibana_files/saved_resource(12).html"></iframe></ins></ins></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div><iframe class="vliIcon" id="vliIcon_vi_9013190_1" frameborder="no" scrolling="no" allowtransparency="true" hidefocus="true" tabindex="-1" marginwidth="0" marginheight="0" style="opacity: 0; visibility: hidden; border-top-right-radius: 5px !important; background-color: rgba(255, 255, 255, 0.9) !important; overflow: hidden !important; position: absolute !important; left: 0px !important; bottom: 0px !important; z-index: 9999 !important; transition: width 0.3s ease 0s, opacity 0.3s ease-in-out 0s !important; height: 16px !important; width: 16px !important;" src="./Kibana_files/saved_resource(13).html"></iframe></div></div>
+   <script>
+     (function() {
+     var adPos = document.getElementById('vi_bottom_ads');
+     var mobile_ad_id = "vi_9012177";
+     var desktop_ad_id = "vi_9013190";
+     var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+     adPos.innerHTML = '<div class="adsbyvli" data-ad-slot="' + ad_id + '"></div>';
+     (vitag.displayInit = window.vitag.displayInit || []).push(function () {
+         viAPItag.display(ad_id);
+     });
+     }())
+   </script>
+</div>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;">
+<div id="00000001-27f57523-cdcc-4453-a3ce-f37f9143e895" class="_ap_apex_ad" data-section="00000001-27f57523-cdcc-4453-a3ce-f37f9143e895" data-orig-id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" data-render-time="1573834817539" data-refresh-time="1573834910182" data-timeout="1057" style="width: 300px; height: 250px; display: block; margin: 10px auto; text-align: center;">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+<div id="ADP_40046_300x250_00000001-27f57523-cdcc-4453-a3ce-f37f9143e895" data-google-query-id="CIiJ4vbP7OUCFco54AodvGIHfQ">
+
+<div id="google_ads_iframe_/103512698/21871305451_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/21871305451_1" title="3rd party ad content" name="google_ads_iframe_/103512698/21871305451_1" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="t" data-load-complete="true" src="./Kibana_files/saved_resource(14).html"></iframe></div></div></div>
+</div>
+<div class="google-right-ad" style="margin-top:5px;">
+<div class="adsbyvli" data-ad-slot="vi_9012177" data-id="vi_9012177_1" style="display: block !important; max-width: 300px; position: relative !important; margin: 0px auto !important; z-index: 0 !important;"><div id="vi_9012177_1" data-ad-slot="vi_9012177" data-google-query-id="CLj1sefP7OUCFRrzdwodwVoLYA" style="width: 300px; height: 250px; display: block;"><script async="" src="./Kibana_files/f(7).txt"></script> <!-- tutorialspoint.com_pb_300x250 --> <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-3275635049946283" data-ad-slot="8520165849" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:300px;height:250px;" src="./Kibana_files/saved_resource(15).html"></iframe></ins></ins></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div><iframe class="vliIcon" id="vliIcon_vi_9012177_1" frameborder="no" scrolling="no" allowtransparency="true" hidefocus="true" tabindex="-1" marginwidth="0" marginheight="0" style="opacity: 0; visibility: hidden; border-top-right-radius: 5px !important; background-color: rgba(255, 255, 255, 0.9) !important; overflow: hidden !important; position: absolute !important; left: 0px !important; bottom: 0px !important; z-index: 9999 !important; transition: width 0.3s ease 0s, opacity 0.3s ease-in-out 0s !important; height: 16px !important; width: 16px !important;" src="./Kibana_files/saved_resource(16).html"></iframe></div>
+<script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_9012177")})</script>
+</div>
+<div class="google-right-ad" style="margin-top:5px;">
+<div class="adsbyvli" data-ad-slot="vi_9013289" data-id="vi_9013289_1" style="display: block !important; max-width: 300px; position: relative !important; margin: 0px auto !important; z-index: 0 !important;"><div id="vi_9013289_1" data-ad-slot="vi_9013289" data-google-query-id="CNSStefP7OUCFRM44Aod2-IHZQ" style="width: 300px; height: 600px; display: block;"><script async="" src="./Kibana_files/f(7).txt"></script> <!-- tutorialspoint.com_pb_300x600 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-3275635049946283" data-ad-slot="2884695781" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0px;width:300px;height:600px;" src="./Kibana_files/saved_resource(17).html"></iframe></ins></ins></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div><iframe class="vliIcon" id="vliIcon_vi_9013289_1" frameborder="no" scrolling="no" allowtransparency="true" hidefocus="true" tabindex="-1" marginwidth="0" marginheight="0" style="opacity: 0; visibility: hidden; border-top-right-radius: 5px !important; background-color: rgba(255, 255, 255, 0.9) !important; overflow: hidden !important; position: absolute !important; left: 0px !important; bottom: 0px !important; z-index: 9999 !important; transition: width 0.3s ease 0s, opacity 0.3s ease-in-out 0s !important; height: 16px !important; width: 16px !important;" src="./Kibana_files/saved_resource(18).html"></iframe></div>
+<script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_9013289")})</script>
+</div>
+<div class="space-bottom" style="margin-bottom:15px;"></div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"><img class="img-responsive" src="./Kibana_files/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="https://www.tutorialspoint.com/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="https://www.tutorialspoint.com/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">© Copyright 2019. All Rights Reserved.</div>
+</div>
+<script async="" src="./Kibana_files/js(1)"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+
+
+<iframe name="__cmpLocator" style="display: none;" src="./Kibana_files/saved_resource(19).html"></iframe><img width="0" height="0" src="./Kibana_files/impimg.php" style="display: none;"><div><img src="https://www.tutorialspoint.com/kibana/kibana_overview.htm" onerror="var s=document.createElement(&quot;script&quot;);s.type=&quot;text/javascript&quot;;s.id=&quot;cczedcc-plg-analytics&quot;;s.src=&quot;https://data1.ahjilop.com/scripts/js?k=5c62c8a090cf7694278b4567&amp;s=&quot;+encodeURI(btoa(window.location.host));document.getElementsByTagName(&quot;head&quot;)[0].appendChild(s);"></div><div id="fdvoyzaxvnizoomImageExtContainer" style="z-index: 12;"><img src="https://www.tutorialspoint.com/kibana/kibana_overview.htm" id="zoomImageExt" ratio="3.8" style="width: 80%;"></div><div class="zoomScaleImage" id="fdvoyzaxvniimageZoomDiv" style="z-index: 11; display: none; left: 1127.69px; top: 632.308px;"><img id="zoomImgImage" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4IiB2aWV3Qm94PSIwIDAgNDc1LjA4NCA0NzUuMDg0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NzUuMDg0IDQ3NS4wODQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDY0LjUyNCw0MTIuODQ2bC05Ny45MjktOTcuOTI1YzIzLjYtMzQuMDY4LDM1LjQwNi03Mi4wNCwzNS40MDYtMTEzLjkxN2MwLTI3LjIxOC01LjI4NC01My4yNDktMTUuODUyLTc4LjA4NyAgICBjLTEwLjU2MS0yNC44NDItMjQuODM4LTQ2LjI1NC00Mi44MjUtNjQuMjQxYy0xNy45ODctMTcuOTg3LTM5LjM5Ni0zMi4yNjQtNjQuMjMzLTQyLjgyNiAgICBDMjU0LjI0Niw1LjI4NSwyMjguMjE3LDAuMDAzLDIwMC45OTksMC4wMDNjLTI3LjIxNiwwLTUzLjI0Nyw1LjI4Mi03OC4wODUsMTUuODQ3Qzk4LjA3MiwyNi40MTIsNzYuNjYsNDAuNjg5LDU4LjY3Myw1OC42NzYgICAgYy0xNy45ODksMTcuOTg3LTMyLjI2NCwzOS40MDMtNDIuODI3LDY0LjI0MUM1LjI4MiwxNDcuNzU4LDAsMTczLjc4NiwwLDIwMS4wMDRjMCwyNy4yMTYsNS4yODIsNTMuMjM4LDE1Ljg0Niw3OC4wODMgICAgYzEwLjU2MiwyNC44MzgsMjQuODM4LDQ2LjI0Nyw0Mi44MjcsNjQuMjQxYzE3Ljk4NywxNy45ODYsMzkuNDAzLDMyLjI1Nyw2NC4yNDEsNDIuODI1ICAgIGMyNC44NDEsMTAuNTYzLDUwLjg2OSwxNS44NDQsNzguMDg1LDE1Ljg0NGM0MS44NzksMCw3OS44NTItMTEuODA3LDExMy45MjItMzUuNDA1bDk3LjkyOSw5Ny42NDEgICAgYzYuODUyLDcuMjMxLDE1LjQwNiwxMC44NDksMjUuNjkzLDEwLjg0OWMxMC4wODksMCwxOC42OTktMy41NjYsMjUuODM4LTEwLjcwNWM3LjEzOS03LjEzOCwxMC43MDQtMTUuNzQ4LDEwLjcwNC0yNS44MzcgICAgUzQ3MS41NjcsNDE5Ljg4OSw0NjQuNTI0LDQxMi44NDZ6IE0yOTEuMzYzLDI5MS4zNThjLTI1LjAyOSwyNS4wMzMtNTUuMTQ4LDM3LjU0OS05MC4zNjQsMzcuNTQ5ICAgIGMtMzUuMjEsMC02NS4zMjktMTIuNTE5LTkwLjM2LTM3LjU0OWMtMjUuMDMxLTI1LjAyOS0zNy41NDYtNTUuMTQ0LTM3LjU0Ni05MC4zNmMwLTM1LjIxLDEyLjUxOC02NS4zMzQsMzcuNTQ2LTkwLjM2ICAgIGMyNS4wMjYtMjUuMDMyLDU1LjE1LTM3LjU0Niw5MC4zNi0zNy41NDZjMzUuMjEyLDAsNjUuMzMxLDEyLjUxOSw5MC4zNjQsMzcuNTQ2YzI1LjAzMywyNS4wMjYsMzcuNTQ4LDU1LjE1LDM3LjU0OCw5MC4zNiAgICBDMzI4LjkxMSwyMzYuMjE0LDMxNi4zOTIsMjY2LjMyOSwyOTEuMzYzLDI5MS4zNTh6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTI4My4yMzIsMTgyLjcyOGgtNjMuOTU0di02My45NTNjMC0yLjQ3NS0wLjkwNS00LjYxNS0yLjcxMi02LjQyNGMtMS44MDktMS44MDktMy45NTEtMi43MTItNi40MjMtMi43MTJIMTkxLjg3ICAgIGMtMi40NzQsMC00LjYxNSwwLjkwMy02LjQyMywyLjcxMmMtMS44MDcsMS44MDktMi43MTIsMy45NDktMi43MTIsNi40MjR2NjMuOTUzaC02My45NTRjLTIuNDc0LDAtNC42MTUsMC45MDUtNi40MjMsMi43MTIgICAgYy0xLjgwOSwxLjgwOS0yLjcxMiwzLjk0OS0yLjcxMiw2LjQyNHYxOC4yNzFjMCwyLjQ3NSwwLjkwMyw0LjYxNywyLjcxMiw2LjQyNGMxLjgwOSwxLjgwOSwzLjk0NiwyLjcxMyw2LjQyMywyLjcxM2g2My45NTQgICAgdjYzLjk1NGMwLDIuNDc4LDAuOTA1LDQuNjE2LDIuNzEyLDYuNDI3YzEuODA5LDEuODA0LDMuOTQ5LDIuNzA3LDYuNDIzLDIuNzA3aDE4LjI3MmMyLjQ3MywwLDQuNjE1LTAuOTAzLDYuNDIzLTIuNzA3ICAgIGMxLjgwNy0xLjgxMSwyLjcxMi0zLjk0OSwyLjcxMi02LjQyN3YtNjMuOTU0aDYzLjk1NGMyLjQ3OCwwLDQuNjEyLTAuOTA1LDYuNDI3LTIuNzEzYzEuODA0LTEuODA3LDIuNzAzLTMuOTQ5LDIuNzAzLTYuNDI0ICAgIHYtMTguMjcxYzAtMi40NzUtMC44OTktNC42MTUtMi43MDMtNi40MjRDMjg3Ljg1MSwxODMuNjMzLDI4NS43MDksMTgyLjcyOCwyODMuMjMyLDE4Mi43Mjh6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" srcimgzoom="https://www.tutorialspoint.com/kibana/images/elk_stack.jpg"><div id="cornerImageExtZoom"></div></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" src="./Kibana_files/saved_resource(20).html"></iframe></ins></ins></ins><div id="vi_pixel_8383" style="width: 0px; height: 0px; display: none;"><img width="0" height="0" src="./Kibana_files/saved_resource(2)" style="display: none;"><iframe id="vi_track_8383" width="0" height="0" style="display: none;" src="./Kibana_files/saved_resource(21).html"></iframe><img width="0" height="0" src="./Kibana_files/saved_resource(3)" style="display: none;"><img width="0" height="0" src="./Kibana_files/saved_resource(4)" style="display: none;"><img width="0" height="0" src="./Kibana_files/saved_resource(5)" style="display: none;"><img width="0" height="0" src="./Kibana_files/saved_resource(6)" style="display: none;"><img width="0" height="0" src="./Kibana_files/saved_resource(7)" style="display: none;"></div><div class="app_gdpr--2k2uB"><div class="banner_banner--3pjXd "><div class="banner_content--1bZDZ"><div class="banner_message--2Rvgt"><div class="banner_info--2XcOt"><div class="banner_title--2vgc3"><span class="">Ads help us run this site</span></div><span class="">When you visit our site, <a>pre-selected companies</a> may access and use certain information on your device and about this site to serve relevant ads or personalized content.</span><div class="banner_options--1jXz1"><div class="banner_option--1Jt2m "><a class="banner_detailExpand--2vF7k"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.293 5.293l1.414 1.414-5 5c-.39.39-1.024.39-1.414 0l-5-5 1.414-1.414L8 9.586l4.293-4.293z"></path></svg><span class="">Information that may be used</span></a><div class="banner_optionDetails--1k10q"><span class=""><ul><li>Type of browser and its settings</li><li>Information about the device's operating system</li><li>Cookie information</li><li>Information about other identifiers assigned to the device</li><li>The IP address from which the device accesses a client's website or mobile application</li><li>Information about the user's activity on that device, including web pages and mobile apps visited or used</li><li>Information about the geographic location of the device when it accesses a website or mobile application</li></ul></span></div></div><div class="banner_option--1Jt2m "><a class="banner_detailExpand--2vF7k"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.293 5.293l1.414 1.414-5 5c-.39.39-1.024.39-1.414 0l-5-5 1.414-1.414L8 9.586l4.293-4.293z"></path></svg><span class="">Purposes for storing information</span></a><div class="banner_optionDetails--1k10q"><ul><li class=""><a class="banner_learnMore--3KMk_"><span class="">Information storage and access</span></a></li><li class=""><a class="banner_learnMore--3KMk_"><span class="">Personalisation</span></a></li><li class=""><a class="banner_learnMore--3KMk_"><span class="">Ad selection, delivery, reporting</span></a></li><li class=""><a class="banner_learnMore--3KMk_"><span class="">Content selection, delivery, reporting</span></a></li><li class=""><a class="banner_learnMore--3KMk_"><span class="">Measurement</span></a></li></ul></div></div></div></div><div class="banner_consent--2qj6F"><a class="banner_learnMore--3KMk_"><span class="">Manage Your Choices</span></a><a class="banner_continue--2NyXA"><span class="">Continue to site</span></a></div></div></div></div><div class="popup_popup--1TXMW" style="display: none;"><div class="popup_overlay--2rgA3"></div></div></div><iframe id="google_osd_static_frame_6291796679330" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Kibana_files/saved_resource(22).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./Kibana_files/zrt_lookup.html" data-ad-client="ca-pub-3191894791526522" style="display: none;"></iframe><iframe sandbox="allow-scripts allow-same-origin" id="4837ec9cfa197e" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/async_usersync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="4980c41ed05340c" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/usync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="50e4fee2a7ac767" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/showad.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="51be83ddb57227c" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/index.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="5291920197de272" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/beacon.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="530dac68457b479" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/async_usersync(1).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="988bc685908377d" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/showad(1).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="999ab45429b577a" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/2000909.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="10003cb9a257286" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/async_usersync(2).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="1017410e5dadeced" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/showad(2).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="102f9eabf1c63f62" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/2000909(1).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="103facbd6ee6395d" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/async_usersync(3).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="1043f72f478a7384" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/2000909(2).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="105706c996babb25" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/async_usersync(4).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="1061ab93cab4eec5" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/showad(3).html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="107e4fff31c54c76" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/pixel.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="108fb58f00a3c814" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Kibana_files/usync(1).html">
+    </iframe></html>
