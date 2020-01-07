@@ -388,12 +388,12 @@ span e {
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	padding: 1px;
-	margin: 1px
+	padding: 2px;
+	position: relative;
 }
 
 span f {
-	font-size: 16px;
+	font-size: 14px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
@@ -431,7 +431,7 @@ span f {
 	background-color: #006aca;
 	padding: 2px;
 	max-width: 300px;
-	height: 265px;
+	height: 270px;
 	margin: 2px;
 	float: left;
 }

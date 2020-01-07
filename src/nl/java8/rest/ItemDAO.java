@@ -27,5 +27,4 @@ public class ItemDAO {
 	            "SELECT p FROM Item p where p.active = true ORDER BY id", Item.class).getResultList();
 		return itemList;
 	}
-	
 }

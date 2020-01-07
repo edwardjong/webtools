@@ -2,9 +2,7 @@
  * @returns
  */
 
-$(document)
-	.ready(
-		function()
+$(document).ready(function()
 		{
 		    /*
 		     * $("hidden").hide();
@@ -38,7 +36,7 @@ $(document)
 			// apply matching height to nav wrapper div to avoid
 			// awkward content jumps
 			jQuery(".nav-placeholder").height(
-				jQuery("nav").outerHeight());
+			jQuery("nav").outerHeight());
 
 		    } // end stickyUtility function
 
@@ -65,7 +63,8 @@ $(document)
 			}
 
 		    });
-		});
+		});	//end of $(document).ready(function()
+
 
 		    var itemNameSaved, nameExtSaved;
 
@@ -141,25 +140,24 @@ $(document)
 				    {
 					text += "<div class=\"item-info-holder mobile-collapse\">"
 					text += "<div class=\"image-holder position-img mobile-collapse\">"
-
-					text += "<a href=\"#\" onClick=\"loadItem("
-						+ json[i].id + ")\">"
-					text += "<img src=\"" + json[i].plaatje
-						+ "\">"
+				// 	text += "<a href=\"#\" onClick=\"loadItem(" + json[i].id + ")\">"
+				 	text += `<a href=\#\ onClick=\loadItem(${json[i].id})\>`
+				//	text += "<img src=\"" + json[i].plaatje	+ "\">"
+					text += `<img src=\ ${json[i].plaatje} \>`
 					text += "</a>"
 					text += "</div>"
-					text += "<a href=\"#\" onClick=\"loadItem("
-						+ json[i].id + ")\">"
-					text += "<h3><span><e>"
-						+ json[i].itemName + "  "
-						+ json[i].nameExt
-						+ "</e></span></h3>"
+				//	text += "<a href=\"#\" onClick=\"loadItem(" + json[i].id + ")\">"
+				    text += `<br> <a href=\#\ onClick=\loadItem(${json[i].id})\> `
+				//	text += "<h3><span><e>"	+ json[i].itemName + "  " + json[i].nameExt + 
+				//		"</e></span></h3>"
+			text += `<h3><span> <e> ${json[i].itemName} ${json[i].nameExt} </e> </span></h3>`
+		
 					text += "</a>"
-					text += "<h3><span><f>" + json[i].datum
-						+ " </f></span></h3>"
+				     // text += "<h3><span><f>" + json[i].datum	+ " </f></span></h3>"
+		 			text += `<h3><span><f> ${json[i].datum} </f></span></h3>`
 					text += "</div>"
 				    }
-				}
+				} 
 
 				document.getElementById("main-content-items").innerHTML = text
 			    }
